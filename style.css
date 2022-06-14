@@ -1,0 +1,284 @@
+/* https://www.figma.com/file/saXdAb9rjfQBJUJIxYqr30/Shoes-Store */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    color: #000000
+}
+h3{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    color: #000000
+}
+p{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000
+}
+/* Menu Principal */
+body header .menu-principal{
+    display: flex;
+    height: 150px;
+    box-shadow: 0px 1px 20px rgba(139, 139, 139, 0.65);    
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: center;
+    justify-content: space-between;
+}
+body header .logo-menu{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+body header .img-logo{
+    height: 110px;
+}
+body header .menu-principal-itens{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body header .menu-principal-home{    
+    display: flex;
+    font-family: 'Open Sans';
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;    
+    color: #777777;
+}
+body header .item-menu{
+    list-style: none;
+    margin: 10px;
+}
+
+/* Seção Banner */
+body main .banner-menu{
+    height: 250px;
+    width: 100%;
+    background-image: url('./img/banner.png');   
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+/* Seção imagens home */
+body main .principal-home{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+body main .caixa-titulo-principal-home{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;        
+}
+body main #titulo-principal-home{
+    margin: 50px;
+}
+body main .principal-imagens{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+body main .principal-imagem1{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 400px;
+    height: 600px;
+    background-image: url('./img/photoshoot-1.png');   
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+body main .principal-imagem2{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    height: auto;
+    width: 600px;
+    height: 757.94px;
+    background-image: url('./img/photoshoot-2.png');   
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+body main .home-produtos{
+    display: flex;
+    flex-direction: column;
+    background-color: #C2185B;
+    height: 700px;
+    width: 100%
+}
+body main #titulo-produtos-home{
+    margin: 50px;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 44px;
+    color: #FFFFFF;
+
+}
+body main .box-produtos-home{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+body main .card-produto-home{
+    height: 388px;
+    width: 260px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+}
+body main article .img-card-produto{
+    width: 100%;
+    height: 300px;
+}
+body main article #produto-scarpin1{
+    background-image: url('./img/shoes1.png');    
+}
+body main article .texto-card-produto{
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: white;
+    padding-left: 10px;
+}
+body main article #produto-scarpin2{
+    background-image: url('./img/shoes2.png');    
+}
+body main article #produto-scarpin3{
+    background-image: url('./img/shoes3.png');    
+}
+body main article #produto-scarpin4{
+    background-image: url('./img/shoes4.png');    
+}
+
+/* Seção produto em destaque */
+body main .produto-destaque-home{
+    display: flex;
+}
+
+body main .titulo-produto-botao{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10%;
+}
+body main .titulo-botao-imagem{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+body main .titulo-produto-destaque{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    color: #000000;
+}
+body main .botao-produto-destaque{
+    width: 403px;
+    height: 99px;
+    background: #C2185B;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    color: #FFFFFF;
+    border: 0;
+}
+body main .botao-home{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+body main .botao-home{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 39px;
+    text-decoration: none;
+}
+body main .imagem-produto-destaque1{
+    display: flex;
+    justify-self: flex-end;
+}
+body main .imagem-produto-destaque2{
+    display: flex;
+    align-self: flex-end;
+}
+/* Seção Footer */
+body .footer{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80%;
+    height: 248px;
+    background: #C2185B;
+}
+body footer .footer-infos1{
+    width: 40%;
+    padding-right: 5%;
+}
+body footer .footer-infos2{
+    margin-top: 40px;
+}
+body footer .footer-infos3{
+    margin-top: 40px;
+
+}
+body footer .img-footer{
+    display: flex;
+    justify-self: flex-start;
+    align-self: center;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-bottom: -10px;
+}
+body footer .infos-footer{
+    display: flex;
+    align-self: flex-start;
+    font-size: 16px;
+    color: white;
+}
+body footer .titulo-footer{
+    display: flex;
+    align-self: center;
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+
+}
+body footer .lista-footer{
+    list-style-type: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+}
