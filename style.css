@@ -1,284 +1,429 @@
-/* https://www.figma.com/file/saXdAb9rjfQBJUJIxYqr30/Shoes-Store */
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Open Sans', sans-serif;
 }
-h2{
-    font-family: 'Open Sans';
+
+.cabecalho{
+    width: 100%;
+    height: 12vh;
+    box-shadow: 0px 1px 20px rgba(139, 139, 139, 0.65);
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu .itens ul{
+    display: flex;
+    width: 50vw;
+    justify-content: space-around;
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
-    font-weight: 800;
+    font-size: 20px;
+    color: #777777;
+    list-style: none;
+    padding-right: 30px;
+    padding-left: 0px;
+    text-decoration: none;
+}
+
+.banner{
+    background-image: url(img/banner.png);
+    width: 100%;
+    height: 25vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo p{
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans' ;
+    font-style: normal;
     font-size: 60px;
-    color: #000000
 }
-h3{
+
+.conteudo .conteudoFotos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    margin-top: 30px;
+}
+
+
+.conteudo .conteudoFotos .foto1{
+    width: 30%;
+    height: 60%;
+}
+
+.conteudo .conteudoFotos .foto2{
+    width: 50%;
+    height: 70%;
+}
+
+.promocoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    background-color: #C2185B;
+    margin-top: 50px;
+    margin-left: -20px;
+}
+
+.off{
     font-family: 'Open Sans';
     font-style: normal;
-    font-weight: 800;
-    font-size: 16px;
-    color: #000000
+    font-size: 44px;
+    line-height: 60px;
+    color: #FFFFFF;
 }
-p{
+
+.cards{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.sapato{
+    width: 250px;
+    height: 400px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    overflow: hidden; /* Faz o div não aumentar a altura por causa da imagem */
+}
+
+/* essa parte de baixo faz a imagem respeitar o tamanho da div */
+.cardPalmilha img{
+    height: 100%;
+    width: 100%;
+}
+.sapato .descricao{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 10px 10px 0px 10px;
+}
+
+.sapato .preco{
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    color: #000000
-}
-/* Menu Principal */
-body header .menu-principal{
-    display: flex;
-    height: 150px;
-    box-shadow: 0px 1px 20px rgba(139, 139, 139, 0.65);    
-    padding-left: 10%;
-    padding-right: 10%;
-    align-items: center;
-    justify-content: space-between;
-}
-body header .logo-menu{
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
-body header .img-logo{
-    height: 110px;
-}
-body header .menu-principal-itens{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-body header .menu-principal-home{    
-    display: flex;
-    font-family: 'Open Sans';
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;    
-    color: #777777;
-}
-body header .item-menu{
-    list-style: none;
-    margin: 10px;
+    line-height: 22px;
+    padding: 0px 10px 0px;
 }
 
-/* Seção Banner */
-body main .banner-menu{
-    height: 250px;
-    width: 100%;
-    background-image: url('./img/banner.png');   
-    background-repeat: no-repeat;
-    background-size: cover;    
-}
-
-/* Seção imagens home */
-body main .principal-home{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 100px;
-}
-body main .caixa-titulo-principal-home{
-    width: 100%;
-    display: flex;
-    align-content: center;
-    justify-content: center;        
-}
-body main #titulo-principal-home{
-    margin: 50px;
-}
-body main .principal-imagens{
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
-}
-body main .principal-imagem1{
-    display: flex;
-    align-self: center;
-    justify-self: center;
-    width: 400px;
-    height: 600px;
-    background-image: url('./img/photoshoot-1.png');   
-    background-repeat: no-repeat;
-    background-size: cover; 
-}
-body main .principal-imagem2{
-    display: flex;
-    align-self: center;
-    justify-self: center;
-    height: auto;
-    width: 600px;
-    height: 757.94px;
-    background-image: url('./img/photoshoot-2.png');   
-    background-repeat: no-repeat;
-    background-size: cover; 
-}
-body main .home-produtos{
-    display: flex;
-    flex-direction: column;
-    background-color: #C2185B;
-    height: 700px;
-    width: 100%
-}
-body main #titulo-produtos-home{
-    margin: 50px;
-    text-align: center;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 44px;
-    color: #FFFFFF;
-
-}
-body main .box-produtos-home{
-    display: flex;
-    justify-content: space-between;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-body main .card-produto-home{
-    height: 388px;
-    width: 260px;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
-}
-body main article .img-card-produto{
-    width: 100%;
-    height: 300px;
-}
-body main article #produto-scarpin1{
-    background-image: url('./img/shoes1.png');    
-}
-body main article .texto-card-produto{
-    height: 90px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    background-color: white;
-    padding-left: 10px;
-}
-body main article #produto-scarpin2{
-    background-image: url('./img/shoes2.png');    
-}
-body main article #produto-scarpin3{
-    background-image: url('./img/shoes3.png');    
-}
-body main article #produto-scarpin4{
-    background-image: url('./img/shoes4.png');    
-}
-
-/* Seção produto em destaque */
-body main .produto-destaque-home{
-    display: flex;
-}
-
-body main .titulo-produto-botao{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin: 10%;
-}
-body main .titulo-botao-imagem{
+.cardPalmilha{
     width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    height: 100%;
 }
-body main .titulo-produto-destaque{
-    font-family: 'Open Sans';
+
+.cardPalmilha .desc{
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-    color: #000000;
+    font-size: 39px;
+    line-height: 53px;
+    padding-bottom: 10px;
 }
-body main .botao-produto-destaque{
-    width: 403px;
-    height: 99px;
+
+.detalhes{
+    width: 50%;
+    height: 12vh;
     background: #C2185B;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-    color: #FFFFFF;
-    border: 0;
-}
-body main .botao-home{
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-    color: #FFFFFF;
-    text-decoration: none;
-}
-body main .botao-home{
-    font-family: 'Open Sans';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 39px;
-    text-decoration: none;
+    line-height: 53px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
 }
-body main .imagem-produto-destaque1{
+
+.segundasFotos{
     display: flex;
-    justify-self: flex-end;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+    overflow: hidden; 
 }
-body main .imagem-produto-destaque2{
-    display: flex;
-    align-self: flex-end;
-}
-/* Seção Footer */
-body .footer{
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
-    padding-left: 10%;
-    padding-right: 10%;
-    width: 80%;
-    height: 248px;
-    background: #C2185B;
-}
-body footer .footer-infos1{
+.segundasFotos .fotoSapato2{
     width: 40%;
-    padding-right: 5%;
 }
-body footer .footer-infos2{
+
+.rodape{
+    width: 100vw;
+    height: 30vh;
+    background: #C2185B;
     margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 20px 0px 20px ;
 }
-body footer .footer-infos3{
-    margin-top: 40px;
+
+.LogoRP{
+    width: 50vw;
 
 }
-body footer .img-footer{
-    display: flex;
-    justify-self: flex-start;
-    align-self: center;
-    margin-top: 10px;
-    margin-left: 0px;
-    margin-bottom: -10px;
+
+.LogoRP .descRP{
+    width: 40vw;
+    margin-top: -25px;
 }
-body footer .infos-footer{
+
+.categorias{
     display: flex;
-    align-self: flex-start;
-    font-size: 16px;
-    color: white;
+    justify-content: space-between;
+    width: 40vw;
 }
-body footer .titulo-footer{
-    display: flex;
-    align-self: center;
-    color: white;
+
+.rodape h3{
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
-    font-weight: 700;
     font-size: 20px;
-
+    color: #FFFFFF;
 }
-body footer .lista-footer{
-    list-style-type: none;
-    font-family: 'Open Sans';
+
+.rodape p{
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
-    font-weight: 300;
     font-size: 16px;
-    color: white;
+    color: #FFFFFF;
+    line-height: 25px;
+}
+
+.faleconosco{
+    display: flex;
+    width: 100vw;
+    padding: 30px 100px;
+    flex-direction: column;
+    justify-content: start;
+    color: #575757;
+}
+
+.conteudoFaleConosco{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.ladoEsq form {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ladoEsq input, div, select, textarea{
+    margin-bottom: 10px;
+}
+
+.ladoDir{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.ladoDir p{
+    margin-bottom: 30px;
+}
+
+.disponibilidade label , .contatoVoce label{
+    padding-right: 20px;
+}
+
+button{
+    background-color: #C2185B;
+    color: #FFFFFF;
+    border: none;
+    height: 33px;
+}
+
+
+
+
+@media (max-width: 1400px){
+    .menu .itens ul{
+        flex-direction: column;
+        align-items: flex-end;
+        font-size: 15px;
+    }
+    
+    .banner{
+        height: 18vh;
+        width: 100vw;
+    }
+
+    .conteudo p{
+        font-size: 30px;
+    }
+
+    .sapato{
+       width: 180px;
+       height: 300px;
+       margin-bottom: 10px;
+   }
+
+   .sapato img {
+        width: 100%;
+        height: 80%; 
+    }
+
+
+    .sapato .descricao{
+        font-size: 15px;
+    }
+
+    .sapato .preco{
+        font-size: 14px;
+    }
+    
+    .cardPalmilha{
+        height: 100%;
+    }
+    .cardPalmilha .fotoSapato{
+        width: 100%;
+        height: 75%;
+    }
+
+    .cardPalmilha .desc{
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .detalhes{
+        height: 10%;
+        font-size: 12px;
+    }
+
+    .segundasFotos{
+        height: 50%;
+    }
+
+    
+    .rodape h3{
+        font-size: 12px;
+    }
+    .categorias{
+        width: 109%;
+    }
+
+    .LogoRP{
+        width: 100%;
+    }
+
+    .imgRP{
+        width: 150px;
+    }
+    
+    .rodape p{
+        font-size: 10px;
+        line-height: 15px;
+    }
+}
+
+@media (max-width: 760px){
+    .menu .itens ul{
+        flex-direction: column;
+        align-items: flex-end;
+        font-size: 15px;
+    }
+    
+    .banner{
+        width: 100vw;
+    }
+
+    .conteudo p{
+        font-size: 30px;
+    }
+
+    .sapato{
+       width: 150px;
+       height: 280px;
+       margin-bottom: 10px;
+   }
+
+   .sapato img {
+        width: 100%;
+        height: 80%; 
+    }
+
+
+    .sapato .descricao{
+        font-size: 15px;
+    }
+
+    .sapato .preco{
+        font-size: 14px;
+    }
+    
+    .cardPalmilha{
+        height: 100%;
+    }
+    .cardPalmilha .fotoSapato{
+        width: 100%;
+        height: 75%;
+    }
+
+    .cardPalmilha .desc{
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .detalhes{
+        height: 10%;
+        font-size: 12px;
+    }
+
+    .segundasFotos{
+        height: 50%;
+    }
+    
+    .rodape h3{
+        font-size: 12px;
+    }
+    .categorias{
+        width: 109%;
+    }
+
+    .LogoRP{
+        width: 100%;
+    }
+
+    .imgRP{
+        width: 150px;
+    }
+    
+    .rodape p{
+        font-size: 10px;
+        line-height: 15px;
+    }
+
 }

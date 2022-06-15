@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/logo-color.ico">
+    <title>Trabalhe conosco</title>
+    
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="menu">
+            <div class="logo"><a href="index.html"><img src="img/logo-color.png"></a></div>
+            <div class="itens">
+                <ul>
+                  <li class="itemMenu" ><a href="#">TODOS OS PRODUTOS</a></li>
+                  <li class="itemMenu" ><a href="#">COLEÇÕES</a></li>
+                  <li class="itemMenu" ><a href="#">OUTLET</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="faleconosco">
+        <h1>Faça parte do nosso time</h1>
+        <div class="conteudoFaleConosco">
+            <div class="ladoEsq">
+                <form>
+                    <label for="nome" class="labels">Nome</label>
+                    <input type="text" id="nome" name="nome">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email"/>
+                    <label for="telefone">Telefone</label>
+                    <input type="number" id="telefone" name="telefone"/>
+                    <label for="Departamento">Departamento</label>
+                    <select id="departamento">
+                        <option selected disabled></option>
+                        <option value="roupa">Roupas</option>
+                        <option value="sapato">Sapatos</option>
+                        <option value="acessorio">Acessorios</option>
+                    </select>
+                    <label>Disponibilidade</label>
+                    <div class="disponibilidade">
+                        <input type="checkbox" id="integral" name="disponibilidade" value="integral"><label for="integral">Integral (8h)</label>
+                        <input type="checkbox" id="meio" name="disponibilidade" value="meio"><label for="meio">Meio Período (4h)</label>
+                        <input type="checkbox" id="free" name="disponibilidade" value="free"><label for="free">Freelancer</label>
+                    </div>
+                    <label>Qual a melhor forma para entrarmos em contato com você?</label>
+                    <div class="contatoVoce">
+                        <input type="radio" id="emailCont" name="contato" value="email"><label for="emailCont">Email</label>
+                        <input type="radio" id="ligacao" name="contato" value="ligacao"><label for="ligacao">Ligação</label>
+                        <input type="radio" id="whatsapp" name="contato" value="whatsapp"><label for="whatsapp">WhatsApp</label>
+                    </div>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="mensagem" rows="10" cols="30">
+                    </textarea>
+                    <label for="curriculo">Curriculo</label>
+                    <input type="file" name="arquivo" accept=".pdf"/>
+                    <button name="enviar">Enviar</button>
+
+                </form>
+
+            </div>
+            <div class="ladoDir">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum architecto ipsum praesentium quas dolore asperiores veniam nemo ut esse dolorem ipsam ratione, minus voluptatum nihil voluptas consequatur. Dignissimos, fugiat voluptatibus.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod nihil delectus, similique at, iste quibusdam assumenda velit iure tenetur officia porro nulla distinctio dolore expedita doloremque cupiditate magni, voluptatum quam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rem aliquam voluptatum nulla suscipit dignissimos, minus placeat iure nemo similique. Vel, quos voluptate qui deserunt est vitae ea blanditiis aliquam.</p>
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer class="rodape">
+            <div class="LogoRP">
+                <img class="imgRP" src="img/logo-white.png">
+                <p class="descRP">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam deleniti rerum odit voluptates molestias obcaecati odio necessitatibus beatae reprehenderit minima at maiores neque laborum nostrum reiciendis, qui distinctio dolorum labore!</p>
+            </div>
+            <div class="categorias">
+                <div class="categoriasRP">
+                    <h3>categorias</h3>
+                    <p>sandálias</p>
+                    <p>botas</p>
+                    <p>tênis</p>
+                    <p>oxford</p>
+                    <p>coturnos</p>
+                </div>
+                <div class="institucionalRP">
+                    <h3>institucional</h3>
+                    <p>sobre nós</p>
+                    <p>perguntas frequentes</p>
+                    <p>politica de privacidade</p>
+                    <p>rastreamento de pedidos</p>
+                    <p>trabalhe conosco</p>
+                    <p>contato</p>
+                </div>
+            </div>
+        
+
+    </footer>
+    
+    
+</body>
+</html>
